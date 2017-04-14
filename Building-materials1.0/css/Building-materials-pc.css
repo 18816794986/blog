@@ -1,0 +1,428 @@
+html,body {
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	color: #333;
+}
+/*移动端冗余*/
+.MB-header,
+.mb-title,
+.mb-more,
+.mb-adver,
+.building-materials4 .r-text,
+.building-materials4 .r-price {display: none;}
+
+.hot-box, .y-hot {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 58px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	background-color: #d21e2f;
+	z-index: 3;
+}
+
+/*---建材馆最大容器---*/
+.Building-materials {
+	width: 100%;
+	min-width: 1210px;
+	overflow: hidden;
+}
+/*-头部轮播容器-*/
+.Building-header{
+	position: relative;
+	width: 100%;
+	min-width: 1210px;
+	height: 500px;
+}
+/*轮播最外层（show层）*/
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+/*轮播装着很多块的长条*/
+.swiper-wrapper{
+	width: 1000%;	
+	height: 100%;
+	overflow: hidden;
+}
+/*轮播的每一个小块*/
+.swiper-slide{background-color: #e5e5e5;}
+
+/*小块里面的图片*/
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+/*分页器*/
+.pagination{
+  	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    z-index: 10;
+    width: 130px;
+    line-height: 1;
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+    padding-top: 1px;
+    border-radius: 20px;
+}
+
+/*分页器里面的每一个小圆点span*/
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/*分页器滚动时候的颜色*/
+.swiper-active-switch {background: #D21E2F;}
+
+/*导航按钮*/
+.arrow-prev,.arrow-next{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 70px;
+	height: 80px;
+	font-size: 70px;
+	line-height: 80px;
+	text-align: center;
+	font-family: simsun;
+	color: rgba(255,255,255,0.8);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	display: none;
+}
+.arrow-prev{left: 0;}
+.arrow-next{right: 0;}
+
+/*---- 建材馆内容容器  ----*/
+.Building-content {
+	width: 1210px;
+	min-width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+.building-materials1,
+.building-materials2 {
+	width: 100%;
+	overflow: hidden;
+}
+/*标题*/
+.bulid-title {
+	border-left: 3px solid #d21e2f;
+	padding-left: 11px;
+	padding-bottom: 4px;
+	line-height: 0.9;
+	font-size: 24px;
+	margin-top: 37px;
+	margin-bottom: -18px;
+}
+.bulid-title .title-text {
+	font-size: 12px;
+	color: #a2a2a2;
+}
+/*按钮*/
+.bulid-btn {
+	text-align: right;
+	padding-bottom: 7px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.bulid-btn .btn-box,
+.bulid-btn .btn-box1 {
+	display: inline-block;
+	border-top: 1px solid transparent;
+	padding-top: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.bulid-btn .btn-active{
+	border-top: 1px solid #d21e2f;
+	color: #D21E2F;
+}
+
+.btn-box:first-child i{
+	border-left: 1px solid #e5e5e5;
+}
+.btn-box .btn-i,
+.btn-box1 .btn-i1{
+	display: inline-block;
+	border-right: 1px solid #e5e5e5;
+	padding: 0 15px;
+	font-size: 16px;
+}
+.btn-box1 .btn-i1 {font-weight: bold;}
+.btn-box .btn-i:hover {color:#D21E2F;}
+/*产品展示大容器*/
+.build-showbox,
+.build-showbox1 {
+	position: relative;
+	width: 100%;
+	height: 581px;
+}
+/*tab切换定位容器*/
+.build-show,
+.build-show1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.show-active,
+.show-active1{display: block;}
+/*展示左边*/
+.build-show .show-left,
+.build-show1 .show-left {
+	float: left;
+	width: 242px;
+	height: 581px;
+}
+/*展示右边*/
+.show-right,.show-rightL{
+	float: left;
+	width: 966px;
+	height: 579px;
+	border: 1px solid #e5e5e5;
+}
+/*右边里面的每个小盒子*/
+.show-right .right-box,.show-rightL .right-box{
+	position: relative;
+	float: left;
+	width: 241px; 
+	height: 289px;
+	text-align: center;
+	border-right: 1px solid #e5e5e5;
+}
+/*最右边框-无*/
+.show-right div.border-b1,.show-rightL div.border-b1{
+	width: 240px;
+	border-right: none;
+}
+.show-right div.border-b,.show-rightL div.border-b{
+	border-bottom: 1px solid #e5e5e5;
+}
+a:hover{color: #d21e2f;}
+/*新品 享折*/
+.right-box .r-new {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 58px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	z-index: 3;
+}
+.new-green{background-color: #83c44e;}
+.new-red {background-color: #d21e2f;}
+.r-new-none,.mb-add{display: none;}
+/*产品图片*/
+.right-box .r-img {
+	width: 172px;
+	height: 172px;
+	margin: 40px auto 0px;
+}
+.r-img img{width: 100%;height: 100%;}
+/*描述*/
+.right-box .r-text{
+	position: absolute;
+	bottom: 41px;
+	right: 0;
+	left: 0;
+	margin: auto;	
+ 	width:220px;
+  	text-overflow:ellipsis;
+  	overflow:hidden;
+ 	 white-space:nowrap;
+}
+/*价格*/
+.right-box .r-price {
+	display: inline-block;
+	position: absolute;
+	bottom: 19px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	color: #d21e2f;
+}
+
+/*家具优惠购*/
+.right-d1 {
+	float: left;
+	box-sizing: border-box;
+	width: 483px;
+	height: 100%;
+	padding: 28px;
+	border-right: 1px solid #e5e5e5;
+}
+.border-no {border: none;}
+.d1-img {
+	width: 426px;
+	height: 402px;
+	margin-bottom: 29px;
+	overflow: hidden;
+}
+.d1-img img {
+	width: 100%;
+	height: 100%;
+  	transition: all 0.4s linear;
+}
+.d1-img img:hover{
+  	transform: scale(1.02);
+}
+.d1-text {
+	width: 424px;
+	height: 90px;
+	border: 1px solid #d6bf9f;
+}
+.right-d1 a{width: 100%;height: 100%;display: inline-block;}
+.text-div {
+	position: relative;
+	width: 369px;
+	height: 62px;
+	margin: 18px auto 0;
+	background-color: #e5e5e5;
+}
+.text-span {
+	position: absolute;
+	top: -11px;
+	left: 9px;
+	display: inline-block;
+	width: 94px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	background-color: #D21E2F;
+	color: #fff;
+}
+.text-p img{
+	width: 100%;
+	height: 100%;
+}
+/*安装服务*/
+.building-materials9 .bulid-title{
+	margin-bottom: 15px;
+}
+.ser-box {
+	width: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.ser-box>span{
+	 display: inline-block;
+	 float: left;
+	 width: 140px;
+	 height: 41px;
+	 border-bottom: 1px solid #e5e5e5;
+	 border-right: 1px solid #e5e5e5;
+	 text-align: center;
+	 line-height: 41px;
+	 color: #a2a2a2;
+	 cursor: pointer;
+}
+.ser-box .bd-r {
+	border-right: none;
+	width: 120px;
+}
+.ser-box .ser-active {color: #D21E2F;}
+.ser-box .ser-active i{border-bottom: 1px solid #D21E2F;}
+
+.ser-conbox {
+	position: relative;
+	width: 100%;
+	height: 495px;
+}
+.ser-conbox .ser-con {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.ser-conbox .con-active{display: block;}
+.ser-con .con {
+	float: left;
+	width: 321px;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+.ser-con .bd-rl{
+	width: 322px;
+	border-right: 1px solid #e5e5e5;
+	border-left: 1px solid #e5e5e5;
+}
+.con a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.con img{
+	width: 100%;
+	height: 100%;
+}
+
+.ser-img {
+	display: inline-block;
+	width: 290px;
+	height: 290px;
+	margin-top: 75px;
+	overflow: hidden;
+}
+.ser-img img{
+  	transition: all 0.4s linear;
+}
+.ser-img img:hover{
+  	transform: scale(1.02);
+}
+.ser-p1 {padding-top: 33px;}
+.ser-p2 {
+	color: #D21E2F;
+	padding-top: 5px;
+}
+
+
+.swiper-container1 .swiper-slide {
+	overflow: hidden;
+}
+.swiper-container1 .swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.swiper-container1 .swiper-slide img {
+    position: relative;
+    width: auto;
+    height: 100%;
+}

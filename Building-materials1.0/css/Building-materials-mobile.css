@@ -1,0 +1,227 @@
+/*初始化*/
+html,body{width: 100%;height: 100%;font-family: simhei;}
+a:hover{text-decoration: none;color: #393939;}
+input:focus{outline: none;}
+img{width: 100%;height: 100%;}
+
+/*PC冗余*/
+.menu,
+.search,
+.navi,
+.foot,
+.bulid-btn,
+.show-left,
+.ser-box{
+	display: none;
+}
+/*头部标题*/
+.MB-header{
+	width: 640px;
+	height: 74px;
+	font-size: 28px;
+	text-align: center;
+	position: relative;
+	font-family: simhei;
+	line-height: 74px;
+	color: #333;
+	background-color: #fff;
+	border-bottom: 1px solid #d6d6d6;
+}
+.MB-header>a{
+	position: absolute;	
+	top: 0;
+	left: 0;
+	width: 95px;
+	height: 74px;
+	color: #333;
+	font-weight: bold;
+	font-size: 36px;
+}
+.MB-header>span{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.Building-materialsbox {
+	width: 640px;
+	min-width: 640px;
+	overflow: hidden;
+	font-family: simhei;
+}
+/*-头部轮播容器-*/
+.Building-header{display: none;}
+
+/*所有类目模块*/
+.mb-cont>div {position: relative;}
+
+/*所有类目模块标题*/
+.bulid-title {
+	position: relative;
+	height: 78px;
+	line-height: 78px;
+	font-size: 24px;
+	text-align: center;
+	border-top: 1px solid #a2a2a2;
+}
+.bulid-title>span {display: none;}
+.bulid-title>span.mb-title {display: block;}
+.building-materials1 .bulid-title {border-top: none; color: #ae2bc8;}
+.building-materials2 .bulid-title {color: #053CB9;}
+.building-materials3 .bulid-title {color: #02c790;}
+.building-materials4 .bulid-title {color: #d11c2d;}
+.building-materials5 .bulid-title {color: #ae2bc8;}
+.building-materials6 .bulid-title {color: #053CB9;}
+.building-materials7 .bulid-title {color: #d11c2d;}
+.building-materials8 .bulid-title {color: #02c790;}
+.building-materials9 .bulid-title {color: #ae2bc8;}
+
+/*查看更多箭头*/
+.mb-more{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #D21E2F;
+}
+/*广告图*/
+.mb-adver a{
+	display: inline-block;
+	width: 640px;
+	height: 344px;
+}
+/*产品大框*/
+.build-showbox {
+	padding: 0 0 20px 20px;
+	overflow: hidden;
+}
+
+.build-show{
+	overflow: hidden;
+	float: left;
+}
+.show-right {overflow: hidden;}
+
+.show-right>div {
+	float: left;
+	box-sizing: border-box;
+	width: 186px;
+	height: 310px;
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: center;
+	display: none;
+}
+.show-right>div:first-child{display: block;}
+
+.show-right>div>a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+/*新品 享折*/
+.right-box .r-new {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 65px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	display: none;
+}
+.new-green{background-color: #83c44e;}
+.new-red {background-color: #d21e2f;}
+
+/*产品图片框*/
+.r-img {
+	width: 186px;
+	height: 186px;
+}
+/*产品名称*/
+.r-text,.ser-p1 {
+	margin-top: 16px;
+	overflow: hidden;
+	font-size: 20px;
+	overflow: hidden;
+    text-overflow: ellipsis; 
+	display: box; 
+	display: -webkit-box;
+    line-clamp: 2;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   line-height: 1.3;
+}
+
+/*产品价格*/
+.r-price,.ser-p2 {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+	font-size: 24px;
+	color: #D21E2F;
+}
+.build-showbox1 {
+	padding: 0 0 20px 20px;
+	overflow: hidden;
+}
+.building-materials4 .build-show1 {
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+}
+.building-materials4 .show-rightL {width: 186px;}
+.building-materials4 .show-rightL>div {
+	height: 310px;
+	text-align: center;
+	margin-top: 20px;
+}
+.building-materials4 .show-rightL>div>a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.d1-img {
+	width: 186px;
+	height: 186px;
+}
+.text-div {display: none;}
+
+/*家装服务*/
+.ser-conbox {overflow: hidden;}
+.ser-conbox>div.ser-con {
+	overflow: hidden;
+	float: left;
+}
+.ser-con>div{
+	float: left;
+	width: 186px;
+	height: 310px;
+	margin-right: 20px;
+	margin-top: 20px;
+	text-align: center;
+	display: none;
+}
+.ser-con>div:first-child{display: block;}
+.con>a {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.ser-img {
+	display: inline-block;
+	width: 186px;
+	height: 186px;
+}
